@@ -1,4 +1,4 @@
-1- Absolute vs Relative Paths
+1) Absolute vs Relative Paths
 Starting from /Users/amanda/data/, which of the following commands could Amanda use to navigate to her home directory, which is /Users/amanda?
 
 1.    No: . stands for the current directory.
@@ -10,3 +10,10 @@ Starting from /Users/amanda/data/, which of the following commands could Amanda 
 7.    Yes: unnecessarily complicated, but correct.
 8.    Yes: shortcut to go back to the user’s home directory.
 9.    Yes: goes up one level.
+
+2)
+   1- No: there is a directory backup in /Users.
+   2-No: this is the content of Users/thing/backup, but with .. we asked for one level further up.
+   3- No: see previous explanation. Also, we did not specify -F to display / at the end of the directory names.
+   4-Yes: ../backup refers to /Users/backup.
+
