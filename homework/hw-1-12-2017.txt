@@ -26,3 +26,6 @@ Starting from /Users/amanda/data/, which of the following commands could Amanda 
 4) The -l arguments makes ls use a long listing format, showing not only the file/directory names but also 
 additional information such as the file size and the time of its last modification. The -h argument makes the 
 file size “human readable”, i.e. display something like 5.3K instead of 5369.
+
+5)The directories are listed alphabetical at each level, the files/directories in each directory are sorted by time of last change.
+
