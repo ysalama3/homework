@@ -5432,3 +5432,75 @@
 15421;Cetartiodactyla;Delphinidae;Orcinus;Orcinus orca;5628758.66;PanTHERIA;34425;"PanTHERIA; AnAge";28968.25;5456.75;PanTHERIA;13857.5425;9380.5;GMA
 41712;Cetartiodactyla;Balaenidae;Eubalaena;Eubalaena glacialis;22999999.91;PanTHERIA;24455;AnAge;20987.5;3467.5;PanTHERIA;9553.875;9553.875;Rspan-AFB
 8153;Cetartiodactyla;Balaenidae;Eubalaena;Eubalaena australis;22999999.91;PanTHERIA;25550;AnAge;22447.5;3102.5;PanTHERIA;9612.275;9855;GMA
+   
+3) 
+
+  117  ls
+  118  less Pacifici2013_data.csv 
+  119  echo
+  120  ’aaaabbb’ | tr
+  121  echo 'aaaabbb'|tr 'a' 'b'
+  122  echo
+  123  ’123456789’ | tr
+  124  echo '123456789' | tr 1-5 0
+  125  echo 'ACt GGcAaTT' | tr actg ACTG
+  126  echo ’ACtGGcAaTT’ | tr [:lower:] [:upper:]
+  127  echo ’aabbccddee’ | tr a-c 1-3
+  128  echo ’aaaaabbbb’ | tr
+  129  echo ’aaaaabbbb’ | tr -d a
+  130  echo ’aaaaabbbb’ | tr -s a
+  131  tr ' ' '\t' < inputfile.csv > outputfile.csv
+  132  cd ..
+  133  cd sandbox/
+  134  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv
+  135  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6
+  136  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6 | tr -s ';' ' '
+  137  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6 | tr -s ';' ' ' | sort -r -n -k 6
+  138  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6 | tr -s ';' ' ' | sort -r -n -k 6 > BodyM.csv
+  139  history >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
+
+4)
+10 smallest 
+Chiroptera Vespertilionidae Pipistrellus Pipistrellus nanulus 2.51
+Eulipotyphla Soricidae Crocidura Crocidura planiceps 2.5
+Eulipotyphla Soricidae Crocidura Crocidura lusitania 2.48
+Eulipotyphla Soricidae Suncus Suncus madagascariensis 2.47
+Eulipotyphla Soricidae Sorex Sorex minutissimus 2.46
+Eulipotyphla Soricidae Suncus Suncus etruscus 2.26
+Chiroptera Vespertilionidae Kerivoula Kerivoula minuta 2.03
+Chiroptera Craseonycteridae Craseonycteris Craseonycteris thonglongyai 1.96
+Eulipotyphla Soricidae Suncus Suncus fellowesgordoni 1.95
+Eulipotyphla Soricidae Crocidura Crocidura levicula 1.77
+
+10 largest
+Chiroptera Molossidae Nyctinomops Nyctinomops laticaudatus 13.12
+Chiroptera Rhinopomatidae Rhinopoma Rhinopoma hardwickii 13.1
+Chiroptera Phyllostomidae Carollia Carollia castanea 13.1
+Chiroptera Rhinolophidae Rhinolophus Rhinolophus fumigatus 13.09
+Chiroptera Nycteridae Nycteris Nycteris vinsoni 13.0763636364
+Chiroptera Nycteridae Nycteris Nycteris parisii 13.0763636364
+Chiroptera Nycteridae Nycteris Nycteris major 13.0763636364
+Chiroptera Nycteridae Nycteris Nycteris intermedia 13.0763636364
+Chiroptera Nycteridae Nycteris Nycteris aurita 13.0763636364
+Eulipotyphla Soricidae Sorex Sorex palustris 13.07
+   
+5)
+
+  139  history >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
+  140  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6 | tr -s ';' ' ' | sort -r -n -k 6 > BodyM.csv
+  141  tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6 | tr -s ';' ' ' | sort -r -n -k 6
+  142  wc -1 BodyM.csv 
+  143  wc -l BodyM.csv
+  144  grep Vombatidae BodyM.csv
+  145  grep tail -n +2 ~/Desktop/eeb-177/CSB/unix/data/Pacifici2013_data.csv | cut -d ';' -f 2-6 | tr -s ';' ' ' | sort -r -n -k 6
+  146  grep -c Vombatidae BodyM.csv
+  147  grep Bos BodyM.csv 
+  148  grep -w Bos BodyM.csv 
+  149  grep -i Bos BodyM.csv 
+  150  grep -B 2 -A 2 "Gorilla gorilla" BodyM.csv 
+  151  grep -n "Gorilla gorilla" BodyM.csv
+  152  grep Gorilla BodyM.csv | grep -v gorilla
+  153  grep -w "Gorilla\|Pan" BodyM.csv 
+  154  cd ..
+  155  grep -r "Gorilla" data/
+  156  history >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
