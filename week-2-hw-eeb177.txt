@@ -5501,6 +5501,55 @@ Eulipotyphla Soricidae Sorex Sorex palustris 13.07
   151  grep -n "Gorilla gorilla" BodyM.csv
   152  grep Gorilla BodyM.csv | grep -v gorilla
   153  grep -w "Gorilla\|Pan" BodyM.csv 
-  154  cd ..
+  154   cd ..
   155  grep -r "Gorilla" data/
   156  history >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
+
+6)   
+1- change directory to the/CSB/unixdata
+2- eeb177-student@eeb177-VirtualBox:~/Desktop/eeb-177/CSB/unix/data$ wc Marra2014_data.fasta 
+  9515  13335 566026 Marra2014_data.fasta
+3-Create a copy of Marra2014_data.fasta in the sandbox and name it my_file.fasta
+4- grep -c isogroup00036 Marra2014_data.fasta
+  16
+5- tr -s '[:blank:] [:blank:] ' ',' <Marra2014_data.fasta
+6- uniq -c Marra2014_data.fasta 
+43
+7- >contig01312  length=3311  numreads=353  gene=isogroup00039
+
+7)
+
+8)
+using grep:
+3-grep -w "of" haiku.txt
+
+find Pipeline Reading Comprehension: 
+wc -l $(find . -name '*.dat') | sort -n
+word count , ls and find can be made to do similar things given the right options, but 
+under normal circumstances, ls lists everything it can, while find searches for things 
+with certain properties and shows them. As we just saw, find . -name '*.txt' gives us a 
+list of all text files in or below the current directory. 
+
+Matching and Subtracting:
+2-find /data -name ose.dat | grep -v temp
+
+Tracking a Species:
+grep -w $1 -r $2  
+|  
+$1.txt
+cut -d : -f 2  
+>  
+|  
+cut -d , -f 1,3  
+
+Little Women:
+grep -w NAMES
+
+Finding Files With Different Properties:
+Solution: Assuming that Nelle’s home is our working directory we type:
+$ find ./ -type f -mtime -1 -user ahmed
+
+
+
+
+
