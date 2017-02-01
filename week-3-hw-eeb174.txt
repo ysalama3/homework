@@ -17,4 +17,30 @@ c) loop using script:
      done
 
 Question 2:
+a)
+echo 'file name is:'
+echo $1
+
+echo 'number of rows:'
+cat $1 | wc -1
+
+echo 'number of columns:'
+$head -n 1 | tr -d | tr -d.\n' | wc -c
+
+
+b)
+FILES=*txt
+for ff in $FILES
+do
+
+    rows= 'cat $1ff | wc -l'
+    columns= head $1ff -n 1 | tr -d | tr -d.\n' | wc -c
+    echo $1ff $row $column
+
+c)
+rows= 'cat $1ff | wc -l'
+    columns= head $1ff -n 1 | tr -d | tr -d.\n' | wc -c
+    echo $1ff $row $column
+- loop to count rows and colomns
+
 
