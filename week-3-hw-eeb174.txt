@@ -1,0 +1,20 @@
+Question 1
+a)  cut -f 1 Gesquiere2011_data.cvs | grep -c -w 3
+      For individual 3 it is 61 times
+     cut -f 1 Gesquiere2011_data.cvs | grep -c -w 27
+   For individual 27 it is 5 times
+
+b) file name will be called $FILE and maleID will be called $ID. script is saved as hw3.sh
+      cut -f 1 $FILE | grep -c -w $ID
+     cut -f 1 $FILE|grep -w $ID|wc -l
+
+c) loop using script:
+     ID='tail -n +2 Gesquiere2011_data.cvs | cut -f 1 | sort -n | uniq' 
+     for male_id in $ID
+     do
+                  count='bash hw3.sh Gesquiere2011_data.cvs $male_id'
+                   echo "ID:" $male_id "counts:" $count
+     done
+
+Question 2:
+
